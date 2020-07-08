@@ -1,44 +1,31 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        hazelland
-      </h1>
-      <h2 class="subtitle">
-        My stellar Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <NavBar />
+    <div class="content">
+      <div class="title">The title</div>
+      <div class="subtitle">A F2E in Taipei</div>
+      <div class="main-img">
+         <img src="~/assets/image/main.png">
       </div>
+
+      
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from "~/components/Logo.vue";
+import NavBar from "~/components/NavBar.vue";
 
 export default {
   components: {
-    Logo
+    Logo,
+    NavBar
   }
-}
+};
 </script>
 
-<style>
+<style lang="scss" >
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -46,27 +33,25 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  .content {
+    background: rgb(255, 231, 209);
+    margin-top: 60px;
+    width: 100%;
+    height: 800px;
+    .main-img{
+      width:300px;
+      height: 300px;
+      img{
+        width:300px;
+      height: 300px;
+      }
+      // background-image: url('https://avatars3.githubusercontent.com/u/23360933?s=280&v=4');
+      // background: url('https://avatars3.githubusercontent.com/u/23360933?s=280&v=4');
+     
+      // background: url('./assets/image/main.png');
+    }
+  }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
