@@ -10,8 +10,9 @@
         </div>
 
         <div class="title-box">
-          <div class="title">Hazel Pan</div>
-          <div class="subtitle">A F2E in Taipei</div>
+          <div class="subtitle">Welcome to</div>
+          <div class="title"> Hazelland</div>
+          <!-- <div class="subtitle">A happy land in Taipei</div> -->
         </div>
       </section>
 
@@ -106,14 +107,15 @@ export default {
       align-items: center;
       .personal-img{
         display: flex;
-        width:400px;
-        border-radius: 50px;
-        border: 3px solid white;
+        width:300px;
+        height:300px;
+        border-radius: 50%;
+        border: 8px solid white;
         margin: 10px;
         overflow: hidden;
         img{
-          width:550px;
-          height:550px;
+          width:320px;
+          height:320px;
         }
       }
       .profile{
