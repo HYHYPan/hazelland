@@ -86,4 +86,8 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.bottom-border{
+  border-bottom: 1px solid #a1a1a16b;
+}
 </style>

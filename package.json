@@ -11,9 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.11.0"
+    "apexcharts": "^3.19.3",
+    "nuxt": "^2.11.0",
+    "vue-apexcharts": "^1.5.3"
   },
   "devDependencies": {
+    "@nuxtjs/moment": "^1.6.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2"
   }
